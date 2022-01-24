@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" type="image/png" href="./images/fav.png" />
+  <title>myTickets | Login</title>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      font-family: "Lato", sans-serif;
+    }
+
+    .login {
+      width: 100%;
+      height: 100vh;
+      display: flex;
+    }
+
+    .image-bg {
+      height: 100vh;
+      width: 50%;
+      background-image: linear-gradient(0deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, .4)), url("https://terrigen-cdn-dev.marvel.com/content/prod/1x/snh_online_6072x9000_hero_03_opt.jpg");
+      background-size: cover;
+      background-position: center;
+    }
+
+    .form {
+      height: 100vh;
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .form input {
+      border: 1px solid #ED1C24;
+      width: 380px;
+      height: 60px;
+      font-size: 20px;
+      padding: 0 20px;
+    }
+
+    .form input:focus {
+      outline: none;
+    }
+
+    .form button {
+      width: 423px;
+      height: 60px;
+      font-size: 20px;
+      padding: 0 20px;
+      background: #ED1C24;
+      border: none;
+      color: white;
+      cursor: pointer
+    }
+
+    i {
+      z-index: 2;
+      position: absolute;
+      top: 30px;
+      right: 50px;
+      color: red;
+      font-size: 30px;
+    }
+
+    a {
+      color: #ED1C24;
+      font-size: 18px;
+    }
+
+    .alert {
+      position: absolute;
+      top: 180px;
+      right: 220px;
+      color: #ED1C24;
+      display: none;
+    }
+
+    .show {
+      display: block;
+    }
+  </style>
+</head>
+
+<body>
+  <a href="index.html">
+    <i class="fas fa-times"></i>
+  </a>
+  <div class="login">
+    <div class="image-bg"></div>
+    <div class="form">
+      <div class="content">
+        <div class="alert ">
+          <h1>Your email or password is wrong.</h1>
+        </div>
+        <img src="images/logo-black.png" alt="" width="300"><br><br>
+        <form action="" id="form">
+          <input type="text" placeholder="Email" id="email"><br><br>
+          <input type="password" placeholder="Password"><br><br><br>
+          <button type="submit" id="button">Sign In</button>
+        </form><br>
+        <a href="">Don't have an account</a>
+      </div>
+    </div>
+  </div>
+
+
+  <script type="text/javascript" src="login.js">
+  </script>
+  <script src="https://kit.fontawesome.com/6689710253.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
